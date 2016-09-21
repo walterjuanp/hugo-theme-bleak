@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Post sections
+   ========================================================================== */
+.post-section {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.post-section.post-section-detail {
+  display: block;
+  margin-bottom: 10px;
+}
+.post-section span {
+  background: #59626A;
+  padding: 4px 8px;
+  font-size: 0.60em;
+  line-height: 1.334em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+.post-section span.post-section-post {
+  background: #7ac143;
+}
+.post-section span.post-section-til {
+  background: #0099e5;
+}
+.post-section span.post-section-resource {
+  background: #ED7902;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+ #header .header-name small {
+   font-size: 0.5em;
+   vertical-align: middle;
+ }
