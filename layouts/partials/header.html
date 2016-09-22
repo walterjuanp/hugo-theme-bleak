@@ -45,13 +45,6 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    {{ if ne .URL "/" }}
-        <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
-
-    {{if .IsNode}}
-        <link href="{{.RSSLink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
-    {{end}}
         <link rel="canonical" href="{{ .Permalink }}" />
 
     {{ if .IsPage }}
@@ -102,9 +95,6 @@
 			  	    {{ end }}
             </div>
             <div class="nav-menu">
-              <a class="rss" href="{{.RSSLink}}">
-                <i class="icon-rss"></i>
-              </a>
                 {{ if .IsPage }}
                 <a class="menu" data-action="toc" data-target="toc"><i class="icon-location"></i></a>
                 {{ end }}
